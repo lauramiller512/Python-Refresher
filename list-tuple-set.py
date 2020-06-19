@@ -1,15 +1,7 @@
-l = ["Bob", "Laura", "Pearce"]
-t = ("Bob", "Laura", "Pearce") # tuples cannot be modified after they are created
-s = {"Bob", "Laura", "Pearce"} # items in a set are not in order
+friends = {"Olivia", "Jyoti", "Amelia"}
+abroad = {"Olivia", "Amelia"}
 
-l[0] = "Louie"
-print(l)
+local_friends = friends.difference(abroad) # looks within friends to find the duplicates from abroad
+print(local_friends) # prints {"Jyoti"}
 
-l.append("Ozzy")
-print(l)
-
-s.add("Ozzy") # use add instead of append for sets
-print(s)
-
-l.remove("Pearce")
-print(l)
+z = x.difference(y) # returns set of items that only exist in set x, and not in set y
