@@ -1,7 +1,5 @@
-local = {"Jyoti"}
-abroad = {"Olivia", "Amelia"}
+art = {"Jyoti", "Amelia", "Sam", "Travis"}
+science = {"Amelia", "Travis", "Laura", "Pearce"}
 
-# z = x.difference(y)  returns set of items that only exist in set x, and not in set y
-
-friends = local.union(abroad) # unites both sets to give total 
-print(friends)
+both = art.intersection(science)
+print(both)
