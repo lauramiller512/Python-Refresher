@@ -7,3 +7,9 @@ print(l)
 
 l.append("Ozzy")
 print(l)
+
+s.add("Ozzy") # use add instead of append for sets
+print(s)
+
+l.remove("Pearce")
+print(l)
