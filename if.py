@@ -1,8 +1,7 @@
-day_of_week = input("What day of the week is it today? ")
+movies_watched = {"The Matrix", "Shawshank Redemption", "The Godfather", "Monty Python's Life of Brian"}
+user_movie = input("Enter a film you watched recently: ")
 
-if day_of_week == "Monday":
-    print("Have a great start to your week!")
-elif day_of_week == "Tuesday":
-    print("Hang tight, it's almost the weekend! Sort of...")
+if user_movie in movies_watched:
+    print(f"I've watched {user_movie} too!")
 else:
-    print("Thank God. I hate Mondays.")
+    print("I haven't watched that yet")
